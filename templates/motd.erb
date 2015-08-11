@@ -7,8 +7,6 @@ Processor: <%= scope.lookupvar('::processorcount') %>x <%= scope.lookupvar('::pr
 <% end -%>
 Kernel:    <%= scope.lookupvar('::kernelrelease') %>
 Memory:    <%= scope.lookupvar('::memorysize') %>
-Puppet:    Role: <%= scope.lookupvar('::role') %>  Environment: <%= scope.lookupvar('::role') %> 
-
-
+Puppet:    Role: <%= scope.lookupvar('::role') %>  Environment: <%= scope.lookupvar('::environment') %> 
 
 This server belongs to NTA and is under puppet control
